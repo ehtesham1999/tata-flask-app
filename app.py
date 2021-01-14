@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os
 import pandas as pd
-import mysql.connector
-from sqlfile import db
 from os.path import join, dirname, realpath
 
 app = Flask(__name__)
@@ -11,8 +9,8 @@ app = Flask(__name__)
 app.config["DEBUG"] = True
 
 # Upload folder
-UPLOAD_FOLDER = 'static/files'
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+UPLOAD_FOLDER = '/home/ehtesham1999/mysite/tata-flask-app/static/files'
+app.config['UPLOAD_FOLDER'] =  UPLOAD_FOLDER
 
 
 
@@ -26,7 +24,7 @@ def upload():
 
 @app.route('/return')
 def return_status():
-    return render_template('return.html',len=0)
+    return render_template('return.html',length=0)
 
 
 @app.route("/record", methods=['POST'])
@@ -42,8 +40,10 @@ def record():
         print()
 
     mycursor.close()
-    return render_template("return.html", len=len(rows), rows=rows)
-
+    if len(rows)>0:
+        return render_template("return.html", length=len(rows[0]), rows=rows[0])
+    else:
+        return render_template("return.html", length=0)
 
 # Get the uploaded files
 @app.route("/uploadfile", methods=['POST'])

@@ -1,89 +1,48 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <title>Tata Project</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-              <a class="navbar-brand" href="/">
-                <img src="/static/Tata-Cliq-Logo.png"  width="110" height="60" class="d-inline-block align-top" alt="" href="/">
-              </a>
-
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
-
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/return">Return Status</a>
-                  </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="https://2ab21e4f-4511-4e12-8b56-8c724b039df8.filesusr.com/ugd/56b82e_f5ff60bec86a4ce986b4f85490ed84b8.pdf" target="_blank">Return Management process</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="https://2ab21e4f-4511-4e12-8b56-8c724b039df8.filesusr.com/ugd/56b82e_79c97570e8694e2dbaabc38ccc262e2b.pdf" target="_blank">Training Module (Video&amp;PDF)</a>
-                  </li>
-
-                    <li class="nav-item">
-                    <a class="nav-link" href="/upload">Upload CSV File</a>
-
-                  </li>
-
-                </ul>
-
-              </div>
-    </nav>
-
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding: 10px;">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-
-                <div class="carousel-caption d-none d-md-block bg-light text-dark" style="border-radius: 25px;">
-                    <h5><a class="nav-link" href="mailto:sellersupport@tataunistore.com" target="_blank">Connect with us Seller Support<span class="sr-only">(current)</span></a></h5>
-                    <p>sellersupport@tataunistore.com</p>
-                </div>
-                <img class="d-block w-100" src="/static/tata_1.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-
-                <div class="carousel-caption d-none d-md-block bg-light text-dark " style="border-radius: 25px;">
-                    <h5><a class="nav-link" href="mailto:Returns@tataunistore.com" target="_blank">Connect With us Returns<span class="sr-only">(current)</span></a></h5>
-                    <p>Returns@tataunistore.com</p>
-                </div>
-                <img class="d-block w-100" src="/static/tata_2.jpg" alt="Second slide">
-
-
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-
-
-  </body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding: 10px;">
+   <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+   </ol>
+   <div class="carousel-inner">
+      <div class="carousel-item active">
+         <div class="carousel-caption d-none d-md-block bg-light text-dark" style="border-radius: 25px;">
+            <h5><a class="nav-link" href="mailto:sellersupport@tataunistore.com" target="_blank">Connect with us Seller Support<span class="sr-only">(current)</span></a></h5>
+            <p>sellersupport@tataunistore.com</p>
+         </div>
+         <img class="d-block w-100 img-fluid" src="/static/tata_1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+         <div class="carousel-caption d-none d-md-block bg-light text-dark" style="border-radius: 25px;">
+            <h5><a class="nav-link" href="mailto:Returns@tataunistore.com" target="_blank">Connect With us Returns<span class="sr-only">(current)</span></a></h5>
+            <p>Returns@tataunistore.com</p>
+         </div>
+         <img class="d-block w-100 img-fluid" src="/static/tata_2.jpg" alt="Second slide">
+      </div>
+   </div>
+   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+   <span class="sr-only">Previous</span>
+   </a>
+   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+   <span class="sr-only">Next</span>
+   </a>
+</div>
+<div class="container" >
+<div class="card-deck" style="padding: 20px;">
+   <div class="card">
+      <div class="card-body" style="border-radius: 5px;">
+         <h5 class="card-title"><a class="nav-link" href="mailto:Returns@tataunistore.com" target="_blank">Connect With us Returns<span class="sr-only">(current)</span></a></h5>
+         <p class="card-text">Returns@tataunistore.com</p>
+      </div>
+   </div>
+   <div class="card" style="border-radius: 5px;">
+      <div class="card-body">
+         <h5 class="card-title"><a class="nav-link" href="mailto:Returns@tataunistore.com" target="_blank">Connect With us Returns<span class="sr-only">(current)</span></a></h5>
+         <p class="card-text">Returns@tataunistore.com</p>
+      </div>
+   </div>
+</div>
+{% endblock content %}
