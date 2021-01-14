@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <title>Tata Project</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+              <a class="navbar-brand" href="/">
+                <img src="/static/Tata-Cliq-Logo.png"  width="110" height="60" class="d-inline-block align-top" alt="" href="/">
+              </a>
+
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/return">Return Status</a>
+                  </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="https://2ab21e4f-4511-4e12-8b56-8c724b039df8.filesusr.com/ugd/56b82e_f5ff60bec86a4ce986b4f85490ed84b8.pdf" target="_blank">Return Management process</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://2ab21e4f-4511-4e12-8b56-8c724b039df8.filesusr.com/ugd/56b82e_79c97570e8694e2dbaabc38ccc262e2b.pdf" target="_blank">Training Module (Video&amp;PDF)</a>
+                  </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link" href="/upload">Upload CSV File</a>
+
+                  </li>
+
+                </ul>
+
+              </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+          <h1 class="display-4">Upload your CSV file</h1>
+            <form method="POST" action="/uploadfile" enctype="multipart/form-data" >
+              <div class="form-group">
+                    <p><input type="file" name="file" class="btn btn-primary btn-lg"></p>
+                  <button type="submit" class="btn btn-success btn-lg">Submit</button>
+              </div>
+
+            </form>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </body>
+</html>
